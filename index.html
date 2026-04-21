@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Site</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;500&display=swap">
+    <link rel="stylesheet" href="global.css">
+</head>
+<body>
+    <div id="cur"></div>
+    <div id="curR"></div>
+    <canvas id="stars"></canvas>
+
+    <!-- NAVBAR -->
+    <nav class="nav">
+    <span class="nav-logo">⟨ dev /⟩</span>
+    <div class="nav-links">
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="projects.html">Projects</a>
+    </div>
+    <a class="nav-cta" href="mailto:hello@yourname.dev">Say hello →</a>
+    </nav>
+
+    <!-- ══════ HOME ══════ -->
+    <div class="page active" id="page-home">
+
+        <section class="hero">
+            <div class="hero-eyebrow">3rd-year software engineer student</div>
+            <h1 class="hero-name"><br><span class="ghost">Thabang Molise</span><br></h1>
+            <p class="hero-desc">Building things that live at the intersection of clean code and thoughtful design. Currently finishing my degree and shipping cool stuff.</p>
+            <div class="hero-btns">
+            <a class="btn-solid"   href="#proj-section">View my work</a>
+            <a class="btn-outline" href="about.html">About me</a>
+            </div>
+            <div class="orbit"></div>
+            <div class="orbit2"></div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="proj-section" id="proj-section">
+
+            <div class="proj-left">
+            <div class="sec-label">Selected work</div>
+
+            <div class="proj-viewport" id="projViewport">
+                <div class="proj-track" id="projTrack"></div>
+            </div>
+
+            <div class="proj-dots" id="projDots"></div>
+            </div>
+
+            <div class="proj-right" id="projRight">
+            <div class="proj-divider"></div>
+            <div class="proj-title-display">
+                <span class="proj-title-inner" id="projTitleText">Robotic Vehicle</span>
+            </div>
+            <div class="proj-counter" id="projCounter">01 / 05</div>
+            </div>
+
+        </section>
+
+        <section class="extras">
+            <div class="ext-card">
+            <div class="ext-lbl">Technical skills</div>
+            <div class="ext-title">What I work with</div>
+            <p class="ext-body">A mix of languages, frameworks and tools picked up through projects, coursework and late-night rabbit holes.</p>
+            <div class="skills-wrap">
+                <div class="sk">Python</div><div class="sk">JavaScript</div>
+                <div class="sk">React</div><div class="sk">Node.js</div><div class="sk">SQL</div>
+                <div class="sk">Java</div><div class="sk">C++</div><div class="sk">Git</div>
+                <div class="sk">Power BI</div><div class="sk">Flutter</div><div class="sk">C#</div>
+                <div class="sk">Linux</div><div class="sk">MongoDB</div>
+            </div>
+            </div>
+            <div class="ext-card">
+            <div class="ext-lbl">Currently</div>
+            <div class="ext-title">What I'm up to</div>
+            <p class="ext-body">Wrapping up my final year project, exploring machine learning applications, and looking for opportunities to join a team that cares about craft.</p>
+            </div>
+            <div class="ext-card">
+            <div class="ext-lbl">Approach</div>
+            <div class="ext-title">How I build</div>
+            <p class="ext-body">I care about code that's readable, systems that scale, and software that actually makes sense to the people using it.</p>
+            </div>
+        </section>
+
+        <footer>
+            <div class="f-logo">⟨ dev /⟩</div>
+            <div class="f-copy">© 2025 — Built from scratch</div>
+        </footer>
+    </div>
+
+    <script type="module" src="global.js"></script>
+</body>
+</html>

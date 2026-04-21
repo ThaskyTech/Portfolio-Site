@@ -1,0 +1,40 @@
+[
+  {
+    "emoji":"🤖", "tag":"Machine Learning", "title":"Robotic Vehicle",
+    "year":"2024", "type":"ML / Embedded", "status":"Completed",
+    "desc":"An autonomous robot that navigates using computer-vision-based obstacle detection.",
+    "stack":["Python","TensorFlow","Raspberry Pi","OpenCV"],
+    "overview":"Replace with your real project overview.",
+    "challenge":"Replace with the key technical challenge you faced.",
+    "built":"Replace with what you built and the architectural decisions you made.",
+    "outcomes":"Key outcomes and things you learned from this project."
+  },
+  {
+    "emoji":"🌐", "tag":"Web App", "title":"Hotel Management System",
+    "year":"2024", "type":"Full-stack", "status":"Completed",
+    "desc":"A management application designed to improve and optimize hotel schedules and tasks, while also providing a comprehensive surveilance.",
+    "stack":["React","Node.js","MongoDB","Docker"],
+    "overview":"Overview of Platform Beta.","challenge":"The challenge.","built":"What was built.","outcomes":"Outcomes."
+  },
+  {
+    "emoji":"📡", "tag":"Systems", "title":"A-EYE Trainer",
+    "year":"2026", "type":"Systems", "status":"Completed",
+    "desc":"A simple all-in-one application designed to fully train an object detection model.",
+    "stack":["Python","Linux","Sockets","CMake"],
+    "overview":"Overview.","challenge":"Challenge.","built":"Built.","outcomes":"Outcomes."
+  },
+  {
+    "emoji":"📱", "tag":"Mobile", "title":"Classical Tracker",
+    "year":"2023", "type":"Mobile", "status":"In progress",
+    "desc":"An application designed for beginner musicians by a beginner musician to encourage daily devotion to learn sheet music.",
+    "stack":["Power BI","Firebase","flutter"],
+    "overview":"Overview.","challenge":"Challenge.","built":"Built.","outcomes":"Outcomes."
+  },
+  {
+    "emoji":"🔒", "tag":"Security", "title":"XAU-SCALPY Bot",
+    "year":"2026", "type":"Statistical", "status":"Completed",
+    "desc":"A simple python based trading bot build to help me understand economical dynamics and re-inforcemnet learning.",
+    "stack":["Python"],
+    "overview":"Overview.","challenge":"Challenge.","built":"Built.","outcomes":"Outcomes."
+  }
+]
