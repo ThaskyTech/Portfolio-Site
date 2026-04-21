@@ -1,32 +1,7 @@
 const projects = await fetch('./projects.json').then(res => res.json());
 
-function showPage(id, lnk) {
-  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  document.getElementById('page-' + id).classList.add('active');
-  document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
-  if (lnk) lnk.classList.add('active');
-  window.scrollTo(0, 0);
-}
-
-
 function scrollToProj() {
   document.getElementById('proj-section').scrollIntoView({ behavior:'smooth' });
-}
-
-function openProject(idx) {
-  const p = projects[idx];
-  document.getElementById('d-tag').textContent      = p.tag;
-  document.getElementById('d-title').textContent    = p.title;
-  document.getElementById('d-year').textContent     = p.year;
-  document.getElementById('d-type').textContent     = p.type;
-  document.getElementById('d-status').textContent   = p.status;
-  document.getElementById('d-hero').textContent     = p.emoji;
-  document.getElementById('d-overview').textContent = p.overview;
-  document.getElementById('d-challenge').textContent= p.challenge;
-  document.getElementById('d-built').textContent    = p.built;
-  document.getElementById('d-stack').textContent    = p.stack.join(', ');
-  document.getElementById('d-outcomes').textContent = p.outcomes;
-  showPage('project', null);
 }
 
 const CARD_W = 340;
@@ -51,10 +26,10 @@ function buildStrip() {
         <span class="card-dot"></span>
         <span class="card-type">${p.type}</span>
       </div>
-      <h3 class="card-title">${p.title}</h3>
+      <h3 class="card-title">${p.title}</h3>h
       <p class="card-desc">${p.desc}</p>
       <div class="card-stack">${p.stack.map(s => `<span class="chip">${s}</span>`).join('')}</div>
-      <a class="card-link" href="#" onclick="openProject(${i});return false">View project</a>
+      <a class="card-link" href="./projects.html?project=${i}">View project</a>
     `;
     track.appendChild(card);
 
@@ -181,3 +156,21 @@ document.querySelectorAll('.nav-link').forEach(link => {
     if(link.href === window.location.href){e.preventDefault();}
   });
 });
+
+const params = new URLSearchParams(window.location.search);
+const idx = params.get('project');
+
+if (idx !== null && document.getElementById('d-tag')) {
+const p = projects[idx];
+document.getElementById('d-tag').textContent       = p.tag;
+document.getElementById('d-title').textContent     = p.title;
+document.getElementById('d-year').textContent      = p.year;
+document.getElementById('d-type').textContent      = p.type;
+document.getElementById('d-status').textContent    = p.status;
+document.getElementById('d-hero').textContent      = p.emoji;
+document.getElementById('d-overview').textContent  = p.overview;
+document.getElementById('d-challenge').textContent = p.challenge;
+document.getElementById('d-built').textContent     = p.built;
+document.getElementById('d-stack').textContent     = p.stack.join(', ');
+document.getElementById('d-outcomes').textContent  = p.outcomes;
+}
