@@ -6,9 +6,14 @@ function scrollToProj() {
 
 const CARD_W = 340;
 const GAP    = 20;
-const PEEK   = 40; // half of extra viewport width (viewport = card + 80)
+let PEEK = window.innerWidth <= 768 ? (window.innerWidth - (CARD_W + 60)) / 2 : 40;
 let cur      = 0;
 let busy     = false;
+
+window.addEventListener('resize', () => {
+  PEEK = window.innerWidth <= 768 ? (window.innerWidth - (CARD_W + 60)) / 2 : 40;
+  applyPos(cur, false);
+});
 
 function buildStrip() {
   const track = document.getElementById('projTrack');

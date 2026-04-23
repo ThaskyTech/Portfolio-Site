@@ -336,6 +336,15 @@ footer { border-top:1px solid var(--border);padding:34px 8vw;display:flex;justif
 
   .proj-title-inner { font-size: clamp(28px, 8vw, 48px); }
 
+.proj-viewport {
+  width: 100vw;
+  border-radius: 0;
+}
+
+.proj-track {
+  padding: 0 calc((100vw - var(--card-w)) / 2);
+}
+
   /* ── EXTRAS ── */
   .extras {
     padding: 60px 6vw 80px;
