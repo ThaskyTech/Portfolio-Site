@@ -31,7 +31,7 @@ function buildStrip() {
         <span class="card-dot"></span>
         <span class="card-type">${p.type}</span>
       </div>
-      <h3 class="card-title">${p.title}</h3>h
+      <h3 class="card-title">${p.title}</h3>
       <p class="card-desc">${p.desc}</p>
       <div class="card-stack">${p.stack.map(s => `<span class="chip">${s}</span>`).join('')}</div>
       <a class="card-link" href="./projects.html?project=${i}">View project</a>
@@ -172,7 +172,7 @@ document.getElementById('d-title').textContent     = p.title;
 document.getElementById('d-year').textContent      = p.year;
 document.getElementById('d-type').textContent      = p.type;
 document.getElementById('d-status').textContent    = p.status;
-document.getElementById('d-hero').textContent      = p.emoji;
+document.getElementById('d-hero').textContent       = p.emoji;
 document.getElementById('d-overview').textContent  = p.overview;
 document.getElementById('d-challenge').textContent = p.challenge;
 document.getElementById('d-built').textContent     = p.built;
