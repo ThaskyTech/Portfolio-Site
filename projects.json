@@ -18,7 +18,7 @@
                  " by the trash eing collected and it's orientation."],
     "built":"See GitHub for demo object detection models and current STL designs for robotic arm",
     "outcomes":"The greatest outcome thus far, is the increased understanding of object detection technologies and software to hardware co-ordination.",
-    "Github":""
+    "Github":"https://github.com/ThaskyTech/Personal-Projects/tree/main/AGC"
   },
   {
     "emoji":"🎼", "tag":"Full-Stack", "title":"Classical Tracker",
@@ -34,7 +34,7 @@
     "challenge":["The project this far has shown no significnt hurdles other than the intergration between certain logics and expected UI/UX desired output."],
     "built":"View project on GitHub for application documentation and designs.",
     "outcomes":"Outcomes yet to be stated.",
-    "Github":""
+    "Github":"https://github.com/ThaskyTech/Personal-Projects/tree/main/Classical%20Tracker"
   },
   {
     "emoji":"📉", "tag":"Financial Technology", "title":"Trading Bot",
@@ -54,7 +54,7 @@
     "built":"Have a look on GitHub for the full Bot folder. NB: certain csv files are not supplied in repository!",
     "outcomes":["Gained a deeper understanding of Market Mechanics and also learned how to design efficient reward fucntions that produce ",
                 "the most optimal outcome."],
-    "Github":""
+    "Github":"https://github.com/ThaskyTech/Personal-Projects/tree/main/Trading%20Bot"
   },
   {
     "emoji":"🤖", "tag":"Automation", "title":"A-EYE Trainer for Dummies",

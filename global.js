@@ -172,10 +172,13 @@ document.getElementById('d-title').textContent     = p.title;
 document.getElementById('d-year').textContent      = p.year;
 document.getElementById('d-type').textContent      = p.type;
 document.getElementById('d-status').textContent    = p.status;
-document.getElementById('d-hero').textContent       = p.emoji;
+document.getElementById('d-hero').textContent      = p.emoji;
 document.getElementById('d-overview').textContent  = p.overview;
 document.getElementById('d-challenge').textContent = p.challenge;
 document.getElementById('d-built').textContent     = p.built;
 document.getElementById('d-stack').textContent     = p.stack.join(', ');
 document.getElementById('d-outcomes').textContent  = p.outcomes;
+document.getElementById('d-github').addEventListener('click', ()=>{
+  if(p.Github === ""){alert("Project not yet uploaded to GitHub. Please give me sometime");return;}
+  window.open(p.Github, '_blank');});
 }
