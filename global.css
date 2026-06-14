@@ -250,7 +250,7 @@ footer { border-top:1px solid var(--border);padding:34px 8vw;display:flex;justif
 .hobbies { display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px; }
 .hob { display:flex;align-items:center;gap:8px;font-size:13px;font-weight:500;color:var(--text);background:var(--surface);border:1px solid var(--border2);padding:9px 16px;border-radius:100px;transition:all .2s; }
 .hob:hover { border-color:var(--accent-hi);background:var(--accent-lo); }
-.edu-card { background:var(--bg2);border:1px solid var(--border);border-radius:18px;padding:28px; }
+.edu-card { margin-bottom: 15px; background:var(--bg2);border:1px solid var(--border);border-radius:18px;padding:28px; }
 .edu-row  { display:flex;gap:18px;padding:16px 0;border-bottom:1px solid var(--border); }
 .edu-row:last-child { border-bottom:none;padding-bottom:0; }
 .edu-yr { font-family:'DM Mono',monospace;font-size:10px;color:var(--text3);padding-top:3px;min-width:52px; }
