@@ -11,7 +11,7 @@ contactForm.addEventListener('submit', async (e)=>{
   e.preventDefault();
 
   const formData = new FormData(contactForm);
-  const payload = Object.fromEntries(formData.entries);
+  const payload = Object.fromEntries(formData.entries());
   const submitBtn = contactForm.querySelector('.submit-btn');
   submitBtn.disabled = true;
   submitBtn.textContent = 'Sending...';
