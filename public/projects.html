@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Thabang Molise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
+    <link rel="icon" type="image/svg+xml" href="assets/galaxy.svg">
+</head>
+<body>
+    <div class="starfield"></div>
+    <nav><div class="wrap">
+        <a href="index.html" class="logo"><span class="dot"></span>thabang.dev</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="services.html">Services</a>
+            <a href="assets/Thabang_Molise_CV.pdf" class="nav-resume" target="_blank">Resume ↗</a>
+            <a href="contact.html" class="nav-cta">Contact</a>
+        </div>
+    </div></nav>
+
+    <section class="section first">
+        <div class="wrap">
+            <span class="section-tag">// PROJECTS</span>
+            <h2>Selected work</h2>
+            <p class="section-sub">Robotics, machine learning and systems projects, each with its own case study.</p>
+
+            <div class="project-list">
+                <a class="project" href="project-agc.html">
+                    <div class="project-head"><h3>Autonomous Garbage Collector</h3><span class="status progress">IN PROGRESS</span><span class="project-category">Robotics / Machine Learning</span></div>
+                    <div class="project-body"><p>A self-driving, litter-collecting vehicle built with a friend: 6-wheel omnidirectional drive, a robotic arm for pickup, onboard object detection, and a scout drone in planning.</p><div class="project-stack"><span>Python</span><span>TensorFlow</span><span>OpenCV</span><span>Raspberry Pi</span></div></div>
+                    <span class="project-go">Case study →</span>
+                </a>
+                <a class="project" href="project-arm.html">
+                    <div class="project-head"><h3>6-Axis Servo Arm with Vision</h3><span class="status shipped">SHIPPED</span><span class="project-category">Robotics / Machine Learning</span></div>
+                    <div class="project-body"><p>A DIY servo arm on an Arduino Uno, paired with YOLOv8 object detection and MiDaS depth estimation in Python. Built and demonstrated in four days.</p><div class="project-stack"><span>Arduino</span><span>Python</span><span>YOLOv8</span><span>MiDaS</span></div></div>
+                    <span class="project-go">Case study →</span>
+                </a>
+                <a class="project" href="project-bc.html">
+                    <div class="project-head"><h3>BC Smart Ecosystem</h3><span class="status progress">DEPLOYED</span><span class="project-category">Final-Year Group Project</span><span class="project-role">Role: Co-Group Leader, Backend Security and Hardware Lead</span></div>
+                    <div class="project-body"><p>Campus navigation plus drone-assisted food delivery, with a custom payload carrier that reports live telemetry. I co-led the eight-person team and owned the backend security layer and the drone hardware track.</p><div class="project-stack"><span>Express</span><span>MongoDB</span><span>Socket.IO</span><span>Python</span></div></div>
+                    <span class="project-go">Case study →</span>
+                </a>
+                <a class="project" href="project-bot.html">
+                    <div class="project-head"><h3>AI-Powered Trading Bot</h3><span class="status shipped">SHIPPED</span><span class="project-category">Machine Learning / Algorithms</span></div>
+                    <div class="project-body"><p>A swing-trading bot for MetaTrader 5 combining LightGBM models, regime detection and a deterministic risk engine, with a news filter around high-impact events.</p><div class="project-stack"><span>Python</span><span>LightGBM</span><span>SQLite</span></div></div>
+                    <span class="project-go">Case study →</span>
+                </a>
+                <a class="project" href="project-maea.html">
+                    <div class="project-head"><h3>MAEA</h3><span class="status progress">IN PROGRESS</span><span class="project-category">Machine Learning / Algorithms</span></div>
+                    <div class="project-body"><p>Market Analysis Execution Agent: an autonomous trading agent built on evolution-strategy populations and a reinforcement-learning core, run as a formal engineering project. The successor to my trading bot.</p><div class="project-stack"><span>Python</span><span>MetaTrader 5</span><span>Reinforcement Learning</span></div></div>
+                    <span class="project-go">Case study →</span>
+                </a>
+            </div>
+
+            <div class="subhead">// SOFTWARE PROJECTS</div>
+            <div class="project-list" style="margin-bottom:0">
+                <a class="project" href="project-civicconnect.html">
+                    <div class="project-head"><h3>Civic Connect</h3><span class="status shipped">DELIVERED</span><span class="project-category">Software Engineering Project — SEN381</span><span class="project-role">Role: GitHub Lead, Backend Security</span></div>
+                    <div class="project-body"><p>A community service-request platform built as a full engineering exercise: requirements, architecture decisions, change control, automated tests and a CI quality gate.</p><div class="project-stack"><span>ASP.NET Core</span><span>Angular</span><span>PostgreSQL</span><span>Supabase</span></div></div>
+                    <span class="project-go">Case study →</span>
+                </a>
+                <div class="project static">
+                    <div class="project-head"><h3>Trade Tracker</h3><span class="status progress">IN PROGRESS</span><span class="project-category">Full-Stack Web App</span></div>
+                    <div class="project-body"><p>A mobile-first trade journal with JWT auth, full trade CRUD, dashboard and calendar summaries, and a PWA build.</p><div class="project-stack"><span>React</span><span>Vite</span><span>Tailwind</span><span>Express</span><span>Prisma</span><span>Neon</span></div></div>
+                </div>
+                <div class="project static">
+                    <div class="project-head"><h3>Vista Etude</h3><span class="status progress">IN PROGRESS</span><span class="project-category">Native App</span></div>
+                    <div class="project-body"><p>A practice companion for classical piano: sheet music viewer with auto-scroll, practice recording and reference-recording storage. Single-user by design.</p><div class="project-stack"><span>Flutter</span><span>Java</span><span>Prisma</span></div></div>
+                </div>
+                <div class="project static">
+                    <div class="project-head"><h3>MJ Tribute Booking System</h3><span class="status shipped">SHIPPED</span><span class="project-category">School Project — WPR381</span><span class="project-role">Role: Security / Auth Engineer</span></div>
+                    <div class="project-body"><p>A concert booking system built with a team. I owned the authentication and security layer: sessions with express-session and password hashing with bcrypt.</p><div class="project-stack"><span>Node.js</span><span>Express</span><span>EJS</span><span>MongoDB</span><span>bcrypt</span></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer><div class="wrap">
+        <p>© 2026 THABANG MOLISE // BUILT WITH ROOIBOS &amp; LATE NIGHTS</p>
+        <div class="footer-links"><a href="https://www.github.com/ThaskyTech" target="_blank">GitHub</a><a href="https://www.linkedin.com/in/thabang-molise-2aa291336" target="_blank">LinkedIn</a></div>
+    </div></footer>
+    <div class="back-top" id="backTop">↑</div>
+    <script type="module" src="global.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Civic Connect | Thabang Molise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
+    <link rel="icon" type="image/svg+xml" href="assets/galaxy.svg">
+</head>
+<body>
+    <div class="starfield"></div>
+    <nav><div class="wrap">
+        <a href="index.html" class="logo"><span class="dot"></span>thabang.dev</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="services.html">Services</a>
+            <a href="assets/Thabang_Molise_CV.pdf" class="nav-resume" target="_blank">Resume ↗</a>
+            <a href="contact.html" class="nav-cta">Contact</a>
+        </div>
+    </div></nav>
+
+    <main class="page"><div class="wrap">
+        <a class="back" href="projects.html">← All projects</a>
+        <span class="section-tag">// SOFTWARE ENGINEERING</span>
+        <h1>Civic Connect</h1>
+        <p class="lead">A community service-request platform, built over four milestones for my software engineering module (SEN381), which teaches engineering a system end to end.</p>
+        <div class="facts">
+            <div><b>STATUS</b>Delivered, October 2026</div>
+            <div><b>TEAM</b>Three students</div>
+            <div><b>MY ROLE</b>GitHub lead, backend security</div>
+            <div><b>STACK</b>ASP.NET Core, Angular, PostgreSQL (Supabase)</div>
+        </div>
+        <div class="prose">
+            <h2>The problem</h2>
+            <p>Community organisations often handle requests such as facility faults, IT support and lost property through a mix of email, phone calls and paper. Staff struggle to prioritise, requesters can't see the status of their request, and reporting is hard to audit. Civic Connect replaces that with one controlled, traceable system.</p>
+            <h2>What we built</h2>
+            <ul>
+                <li><b>Requesters</b> submit requests, track status and history, and get email updates.</li>
+                <li><b>Staff</b> search their queue, accept or reject assignments and move requests through controlled status steps.</li>
+                <li><b>Admins</b> assign work, manage categories and use a dashboard backed by an append-only audit history.</li>
+                <li><b>Architecture:</b> a layered modular monolith: one ASP.NET Core API with Request, Auth and Notification modules, an Angular client and a relational PostgreSQL database.</li>
+                <li><b>Security:</b> JWT authentication, bcrypt hashing and role-based access control enforced on the server.</li>
+            </ul>
+            <h2>How we engineered it</h2>
+            <ul>
+                <li><b>Decisions on record:</b> ADRs for a table-driven status-transition validator and a dependency-injected notifier, plus a documented stack and database comparison.</li>
+                <li><b>Change control:</b> five approved change requests, each with an impact analysis.</li>
+                <li><b>Testing:</b> 58 unit tests, 64 integration tests against PostgreSQL, 31 Angular spec files and a Cypress smoke test, traced to requirements.</li>
+                <li><b>CI quality gate:</b> every pull request is built, tested, linted, audited and secret-scanned, with two peer reviews before merge.</li>
+            </ul>
+            <h2>My part</h2>
+            <p>I owned the GitHub side: the branching strategy, the CI checks and pipelines, and pull request review. I also implemented the security features, including role-based access control, and defined the project's tests.</p>
+            <h2>What I took from it</h2>
+            <p>Settle the role model and the frontend and backend contract early, update documents in the same pull request as the code, and plan deployment from the start.</p>
+            <p><a class="btn-secondary" href="https://github.com/TMT-Enterprise/SEN-Civic-Connect---TMT" target="_blank">Full documentation on GitHub ↗</a></p>
+        </div>
+        <div class="next"><a href="projects.html">← All projects</a><a href="project-maea.html">Next: MAEA →</a></div>
+    </div></main>
+
+    <footer><div class="wrap">
+        <p>© 2026 THABANG MOLISE // BUILT WITH ROOIBOS &amp; LATE NIGHTS</p>
+        <div class="footer-links"><a href="https://www.github.com/ThaskyTech" target="_blank">GitHub</a><a href="https://www.linkedin.com/in/thabang-molise-2aa291336" target="_blank">LinkedIn</a></div>
+    </div></footer>
+    <div class="back-top" id="backTop">↑</div>
+    <script type="module" src="global.js"></script>
+</body>
+</html>

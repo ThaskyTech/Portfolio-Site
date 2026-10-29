@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Thabang Molise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
+    <link rel="icon" type="image/svg+xml" href="assets/galaxy.svg">
+</head>
+<body>
+    <div class="starfield"></div>
+    <nav><div class="wrap">
+        <a href="index.html" class="logo"><span class="dot"></span>thabang.dev</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="services.html">Services</a>
+            <a href="assets/Thabang_Molise_CV.pdf" class="nav-resume" target="_blank">Resume ↗</a>
+            <a href="contact.html" class="nav-cta active">Contact</a>
+        </div>
+    </div></nav>
+
+    <section class="section first">
+        <div class="wrap">
+            <span class="section-tag">// CONTACT</span>
+            <h2>Get in touch</h2>
+            <p class="section-sub">Whether it's a role, a freelance project, or just a question about something I've built, reach out.</p>
+            <div class="contact-panel">
+                <div>
+                    <div class="panel-title">REACH ME DIRECTLY</div>
+                    <div class="contact-links">
+                        <a href="mailto:lethasky@lethasky.co.za" target="_blank">→ lethasky@lethasky.co.za</a>
+                        <a href="https://www.github.com/ThaskyTech" target="_blank">→ github.com/ThaskyTech</a>
+                        <a href="https://www.linkedin.com/in/thabang-molise-2aa291336" target="_blank">→ linkedin.com/in/thabang-molise</a>
+                        <a href="assets/Thabang_Molise_CV.pdf" target="_blank">→ Resume (PDF)</a>
+                    </div>
+                    <p class="contact-note">Based in Pretoria, South Africa.</p>
+                </div>
+                <form id="contactForm">
+                    <div class="field-row">
+                        <div class="field"><label>NAME</label><input type="text" name="name" placeholder="Your name" required></div>
+                        <div class="field"><label>EMAIL</label><input type="email" name="email" placeholder="you@company.com" required></div>
+                    </div>
+                    <div class="field">
+                        <label>PROJECT TYPE</label>
+                        <select name="projectType">
+                            <option>Freelance Project</option>
+                            <option>Job Opportunity</option>
+                            <option>General Inquiry</option>
+                        </select>
+                    </div>
+                    <div class="field"><label>MESSAGE</label><textarea name="message" placeholder="Tell me a bit about what you need..." required></textarea></div>
+                    <input type="text" name="honeypot" style="position:absolute; left:-9999px;" tabindex="-1" autocomplete="off">
+                    <button class="submit-btn" type="submit">Send Message</button>
+                    <p class="form-note" id="formStatus"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer><div class="wrap">
+        <p>© 2026 THABANG MOLISE // BUILT WITH ROOIBOS &amp; LATE NIGHTS</p>
+        <div class="footer-links"><a href="https://www.github.com/ThaskyTech" target="_blank">GitHub</a><a href="https://www.linkedin.com/in/thabang-molise-2aa291336" target="_blank">LinkedIn</a></div>
+    </div></footer>
+    <div class="back-top" id="backTop">↑</div>
+    <script type="module" src="global.js"></script>
+</body>
+</html>

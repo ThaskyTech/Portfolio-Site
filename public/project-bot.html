@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Trading Bot | Thabang Molise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
+    <link rel="icon" type="image/svg+xml" href="assets/galaxy.svg">
+</head>
+<body>
+    <div class="starfield"></div>
+    <nav><div class="wrap">
+        <a href="index.html" class="logo"><span class="dot"></span>thabang.dev</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="services.html">Services</a>
+            <a href="assets/Thabang_Molise_CV.pdf" class="nav-resume" target="_blank">Resume ↗</a>
+            <a href="contact.html" class="nav-cta">Contact</a>
+        </div>
+    </div></nav>
+
+    <main class="page"><div class="wrap">
+        <a class="back" href="projects.html">← All projects</a>
+        <span class="section-tag">// MACHINE LEARNING / ALGORITHMS</span>
+        <h1>AI-Powered Trading Bot</h1>
+        <p class="lead">A swing-trading bot for MetaTrader 5 that pairs machine learning models with strict, rule-based risk control.</p>
+        <div class="facts">
+            <div><b>STATUS</b>Shipped, 2026</div>
+            <div><b>MARKETS</b>EURUSD and GBPUSD</div>
+            <div><b>STACK</b>Python, LightGBM, SQLite</div>
+            <div><b>TARGET</b>20 to 30% annual return, 10% max drawdown</div>
+        </div>
+        <div class="prose">
+            <h2>How it works</h2>
+            <ul>
+                <li><b>Multi-timeframe strategy:</b> H4 sets the directional bias and M15 times the entries.</li>
+                <li><b>Models:</b> LightGBM gradient-boosting models, plus a regime-detection system that adapts to changing market conditions.</li>
+                <li><b>Risk engine:</b> deterministic rules cap exposure at trade and portfolio level, independent of the models.</li>
+                <li><b>News filter:</b> pauses trading around high-impact events.</li>
+                <li><b>Logging and upkeep:</b> trades are stored locally in SQLite, and the models are refreshed quarterly.</li>
+            </ul>
+            <h2>The hard part</h2>
+            <p>Tuning the decision engine for a good Sortino ratio without triggering reward hacking, where the system finds loopholes in the reward instead of learning the intended behaviour. Stricter reward rules fixed the hacking but lowered the Sortino ratio, so the work was finding the balance.</p>
+            <h2>What I took from it</h2>
+            <p>A much deeper understanding of market mechanics, and of how to design reward functions that push a model toward what you actually want. The full bot folder is on my GitHub (some CSV data files are excluded).</p>
+            <p><a class="btn-secondary" href="https://www.github.com/ThaskyTech" target="_blank">View on GitHub ↗</a></p>
+        </div>
+        <div class="next"><a href="project-bc.html">← BC Ways &amp; Eats</a><a href="projects.html">All projects →</a></div>
+    </div></main>
+
+    <footer><div class="wrap">
+        <p>© 2026 THABANG MOLISE // BUILT WITH ROOIBOS &amp; LATE NIGHTS</p>
+        <div class="footer-links"><a href="https://www.github.com/ThaskyTech" target="_blank">GitHub</a><a href="https://www.linkedin.com/in/thabang-molise-2aa291336" target="_blank">LinkedIn</a></div>
+    </div></footer>
+    <div class="back-top" id="backTop">↑</div>
+    <script type="module" src="global.js"></script>
+</body>
+</html>

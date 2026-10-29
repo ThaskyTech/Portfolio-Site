@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6-Axis Servo Arm with Vision | Thabang Molise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
+    <link rel="icon" type="image/svg+xml" href="assets/galaxy.svg">
+</head>
+<body>
+    <div class="starfield"></div>
+    <nav><div class="wrap">
+        <a href="index.html" class="logo"><span class="dot"></span>thabang.dev</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="services.html">Services</a>
+            <a href="assets/Thabang_Molise_CV.pdf" class="nav-resume" target="_blank">Resume ↗</a>
+            <a href="contact.html" class="nav-cta">Contact</a>
+        </div>
+    </div></nav>
+
+    <main class="page"><div class="wrap">
+        <a class="back" href="projects.html">← All projects</a>
+        <span class="section-tag">// ROBOTICS / MACHINE LEARNING</span>
+        <h1>6-Axis Servo Arm with Vision</h1>
+        <p class="lead">A DIY robotic arm combined with object detection and depth estimation, built and demonstrated in four days.</p>
+        <div class="facts">
+            <div><b>STATUS</b>Shipped (showcase project)</div>
+            <div><b>TIMELINE</b>4 days</div>
+            <div><b>HARDWARE</b>Arduino Uno, servos (PWM)</div>
+            <div><b>SOFTWARE</b>Python, YOLOv8, MiDaS</div>
+        </div>
+        <div class="prose">
+            <h2>What it does</h2>
+            <p>A six-axis arm driven by servos from an Arduino Uno, with a camera feeding a Python pipeline. <b>YOLOv8</b> finds objects in the frame and <b>MiDaS</b> estimates depth from a single camera image, giving the arm a sense of where things are.</p>
+            <h2>What got done</h2>
+            <ul>
+                <li>Camera calibration completed.</li>
+                <li>Object detection and monocular depth estimation running in Python.</li>
+                <li>Servo control over PWM from the Arduino.</li>
+            </ul>
+            <h2>Constraints and decisions</h2>
+            <p><b>Time.</b> With four days, I chose a reliable demo over a half-working one: the final demonstration runs a hardcoded motion sequence on the Arduino rather than closing the full vision-to-motion loop.</p>
+            <p><b>Power.</b> The servos run from a 12V supply, so a buck converter steps it down to 5V to protect them.</p>
+            <h2>Next steps</h2>
+            <p>Close the loop: turn detections and depth into joint targets, and add inverse kinematics so the arm moves to what the camera sees.</p>
+        </div>
+        <div class="next"><a href="project-agc.html">← Autonomous Garbage Collector</a><a href="project-bc.html">Next: BC Ways &amp; Eats →</a></div>
+    </div></main>
+
+    <footer><div class="wrap">
+        <p>© 2026 THABANG MOLISE // BUILT WITH ROOIBOS &amp; LATE NIGHTS</p>
+        <div class="footer-links"><a href="https://www.github.com/ThaskyTech" target="_blank">GitHub</a><a href="https://www.linkedin.com/in/thabang-molise-2aa291336" target="_blank">LinkedIn</a></div>
+    </div></footer>
+    <div class="back-top" id="backTop">↑</div>
+    <script type="module" src="global.js"></script>
+</body>
+</html>

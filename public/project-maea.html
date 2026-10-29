@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAEA | Thabang Molise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
+    <link rel="icon" type="image/svg+xml" href="assets/galaxy.svg">
+</head>
+<body>
+    <div class="starfield"></div>
+    <nav><div class="wrap">
+        <a href="index.html" class="logo"><span class="dot"></span>thabang.dev</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="services.html">Services</a>
+            <a href="assets/Thabang_Molise_CV.pdf" class="nav-resume" target="_blank">Resume ↗</a>
+            <a href="contact.html" class="nav-cta">Contact</a>
+        </div>
+    </div></nav>
+
+    <main class="page"><div class="wrap">
+        <a class="back" href="projects.html">← All projects</a>
+        <span class="section-tag">// MACHINE LEARNING / ALGORITHMS</span>
+        <h1>MAEA</h1>
+        <p class="lead">Market Analysis Execution Agent: an autonomous agent that analyses markets, places trades and edits its own analysis configuration within rules set by its owner.</p>
+        <div class="facts">
+            <div><b>STATUS</b>In development</div>
+            <div><b>TYPE</b>Personal project</div>
+            <div><b>STACK</b>Python, MetaTrader 5, reinforcement learning</div>
+            <div><b>CONTEXT</b>Successor to my trading bot</div>
+        </div>
+        <div class="prose">
+            <h2>The idea</h2>
+            <p>MAEA analyses markets, places trades through MetaTrader 5 and can edit its own analysis configuration. That freedom sits inside governance rules defined by its owner, so the agent can adapt without being able to override the limits I set.</p>
+            <h2>How it learns</h2>
+            <ul>
+                <li>A population of evolution-strategy agents explores different behaviours and shares a replay buffer.</li>
+                <li>A central reinforcement-learning agent samples that buffer and models how the market reacts.</li>
+                <li>The system optimises for regime resilience and population diversity. Agents are retired on portfolio depletion, sustained regression or stagnation.</li>
+            </ul>
+            <h2>How it's run</h2>
+            <p>I run MAEA as a formal software engineering project: every proposed change is documented against agreed acceptance criteria before it is made.</p>
+            <h2>Where it came from</h2>
+            <p>MAEA evolved from my earlier <a href="project-bot.html" style="color:var(--cyan)">trading bot</a> for EURUSD and GBPUSD, which used LightGBM models on a multi-timeframe strategy (H4 bias, M15 entries), regime detection, a deterministic risk engine and a high-impact news filter.</p>
+        </div>
+        <div class="next"><a href="projects.html">← All projects</a><a href="project-bot.html">Next: AI-Powered Trading Bot →</a></div>
+    </div></main>
+
+    <footer><div class="wrap">
+        <p>© 2026 THABANG MOLISE // BUILT WITH ROOIBOS &amp; LATE NIGHTS</p>
+        <div class="footer-links"><a href="https://www.github.com/ThaskyTech" target="_blank">GitHub</a><a href="https://www.linkedin.com/in/thabang-molise-2aa291336" target="_blank">LinkedIn</a></div>
+    </div></footer>
+    <div class="back-top" id="backTop">↑</div>
+    <script type="module" src="global.js"></script>
+</body>
+</html>

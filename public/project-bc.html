@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BC Ways &amp; Eats | Thabang Molise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
+    <link rel="icon" type="image/svg+xml" href="assets/galaxy.svg">
+</head>
+<body>
+    <div class="starfield"></div>
+    <nav><div class="wrap">
+        <a href="index.html" class="logo"><span class="dot"></span>thabang.dev</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="services.html">Services</a>
+            <a href="assets/Thabang_Molise_CV.pdf" class="nav-resume" target="_blank">Resume ↗</a>
+            <a href="contact.html" class="nav-cta">Contact</a>
+        </div>
+    </div></nav>
+
+    <main class="page"><div class="wrap">
+        <a class="back" href="projects.html">← All projects</a>
+        <span class="section-tag">// FINAL-YEAR GROUP PROJECT</span>
+        <h1>BC Ways &amp; Eats</h1>
+        <p class="lead">A Belgium Campus platform that combines campus navigation with drone-assisted food ordering.</p>
+        <div class="facts">
+            <div><b>STATUS</b>Deployed (Not Released)</div>
+            <div><b>MY ROLE</b>Backend developer and hardware lead</div>
+            <div><b>TEAM</b>Three-person backend squad</div>
+            <div><b>STACK</b>Node.js, Express, MongoDB, Socket.IO, Python</div>
+        </div>
+        <div class="prose">
+            <h2>The system</h2>
+            <p>The platform has two halves: <b>BC Ways</b> for pedestrian campus navigation and <b>BC Eats</b> for ordering from the tuck shop with drone-assisted delivery. The backend handles ordering, delivery simulation and navigation data.</p>
+            <h2>My part</h2>
+            <ul>
+                <li>Co-led an eight-person team building BC Ways (campus navigation) and BC Eats (food ordering and drone delivery).</li>
+                <li>Owned feature delivery: checked each feature was built and shipped to requirements, and tracked scope creep across allsquads</li>
+                <li>Acted as backend lead, assigning work, running feasibility checks project-wide and closing security gaps such as missingsession management.</li>
+                <li>Built the backend security layer: Stripe payment logic, SQL-injection protection, and module isolation so a failure in BCWays cannot take down BC Eats, or the reverse.</li>
+                <li>Led the drone hardware track: researched drone mechanics and architectures, and wrote the hardware proposaldocuments used to approach potential sponsors.</li>
+                <li> Designed the delivery demo: a DJI Neo flown by software through Appium-automated controls, delivering to a customcarrier with its own telemetry, ETA and release system.</li>
+            </ul>
+            <h2>The drone and carrier</h2>
+            <p>Instead of building a drone from scratch, the plan uses a pre-built DJI Neo paired with a custom-designed payload carrier. The carrier has its own onboard system, independent of the drone, that sends live telemetry to the app, calculates an ETA and releases the payload near the landing zone.</p>
+            <p>For the presentation the delivery is simulated: the carrier stays at a fixed location while the drone flies from the tuck shop to it and back. To keep the demo software-driven, a Python script using Appium drives the drone app's virtual joysticks from a USB-tethered phone.</p>
+            <h2>View Product</h2>
+            <a href="https://www.tracebacktechnologies.co.za/" target="_blank" rel="noopener noreferrer">Visit site</a>
+        </div>
+        <div class="next"><a href="project-arm.html">← 6-Axis Servo Arm</a><a href="project-bot.html">Next: AI Trading Bot →</a></div>
+    </div></main>
+
+    <footer><div class="wrap">
+        <p>© 2026 THABANG MOLISE // BUILT WITH ROOIBOS &amp; LATE NIGHTS</p>
+        <div class="footer-links"><a href="https://www.github.com/ThaskyTech" target="_blank">GitHub</a><a href="https://www.linkedin.com/in/thabang-molise-2aa291336" target="_blank">LinkedIn</a></div>
+    </div></footer>
+    <div class="back-top" id="backTop">↑</div>
+    <script type="module" src="global.js"></script>
+</body>
+</html>
